@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+.btn-16{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    box-shadow: -7px -7px 20px 0px #ff9,
+                -4px -4px 5px 8px #ff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+    transition: all .3s ease;
+}
+
+.btn-16:hover{color: #000;}
+
+.btn-16:hover::after{
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-16:active{top: 2px;}
+
+button{margin: 20px;}
+
+.custom-btn{
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 
+    2px 2px 2px 0px rgba(255, 255, 255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.btn-16{
+    border: none;
+    color: #000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{text-align: center;}
+
+.text{text-align: center;}
+
+#container img{
+    margin-top: 2rem;
+    height: 400px;
+    width: 500px;
+    border-radius: 50px;
+}
